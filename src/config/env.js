@@ -1,6 +1,3 @@
-//Forma Tradicional
-// require('dotenv').config();
-// const { get } = require('env-var');
 
 // ES6
 import env from 'dotenv';
@@ -12,7 +9,3 @@ export const envs = {
     PORT: envvar.get('PORT').required().asPortNumber(),
     PUBLIC_PATH: envvar.get('PUBLIC_PATH').default('public').asString()
 }
-
-// module.exports = {
-//     envs
-// }
